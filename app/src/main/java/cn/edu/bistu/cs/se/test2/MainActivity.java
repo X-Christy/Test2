@@ -12,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-    private final String tag="MyTag";
     private static final String TAG="MyActivity";
 
     @Override
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         Integer i=3;
         String strMsg="hehehe";
-        Log.v(tag,strMsg);
+        Log.v(TAG,strMsg);
         Log.v(TAG,"VERBOSE Message");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -36,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Log.v(tag,"VERBOSE Message");
-        Log.d(tag,"Debug Message");
-        Log.i(tag,"Into Message");
-        Log.w(tag,"Warning Message");
-        Log.e(tag,"Error Message");
+        Log.v(TAG,"VERBOSE Message");
+        Log.d(TAG,"Debug Message");
+        Log.i(TAG,"Into Message");
+        Log.w(TAG,"Warning Message");
+        Log.e(TAG,"Error Message");
 
     }
 
